@@ -48,12 +48,14 @@ for each in odds:
         odds_dict[each] += 1
 dup = odds_dict
 print("Odds generated :", odds)
+print("Listed accordingly -->", odds_dict)
 
 target_odd = float(input("Enter target no of odds : "))
 while target_odd > multiply(odds):
     target_odd = float(input("Enter target no of odds : "))
+options = int(input("Enter number of possible choices : "))
 
-print(find_comb(odds_dict, target_odd, 3))
+find_comb(odds_dict, target_odd, options)
 
 
 
