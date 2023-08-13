@@ -46,7 +46,6 @@ for each in odds:
         odds_dict[each] = 1
     else:
         odds_dict[each] += 1
-dup = odds_dict
 print("Odds generated :", odds)
 print("Listed accordingly -->", odds_dict)
 
